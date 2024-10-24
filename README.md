@@ -1,57 +1,65 @@
 CalculatorApp README
 Overview
-CalculatorApp is a simple JavaFX application designed to perform basic arithmetic operations: addition, subtraction, multiplication, and division. The application follows the Model-View-Controller (MVC) design pattern to ensure a clean separation of concerns.
+CalculatorApp is a JavaFX-based calculator that performs basic arithmetic operations such as addition, subtraction, multiplication, and division. The application is built using the Model-View-Controller (MVC) design pattern for a clean and organized structure.
 
-Features
-User-friendly GUI for intuitive interaction.
-Supports basic arithmetic operations (+, -, *, /).
-Handles division by zero and displays appropriate error messages.
-Clear/reset functionality to start new calculations.
 Table of Contents
-Installation
-Usage
+Running the Application
+Using the Calculator
 Screenshots
-Error Handling
 Known Issues
-Contributing
-License
-Installation
+Error Handling
+Running the Application
 Clone the repository:
+
 bash
 Копировать код
 git clone https://github.com/yourusername/CalculatorApp.git
 Navigate to the project directory:
+
 bash
 Копировать код
 cd CalculatorApp
 Open the project in your IDE (e.g., IntelliJ IDEA, Eclipse).
-Ensure you have JavaFX set up in your development environment.
-Usage
+
+Set up JavaFX:
+
+Ensure that you have the JavaFX SDK installed and configured in your IDE.
+Add the JavaFX library to your project's dependencies.
 Run the application:
-In your IDE, locate the main class and run it.
-Using the Calculator:
-Enter numbers using the digit buttons (0-9).
-Select an arithmetic operator (+, -, *, /).
-Press the equals button (=) to perform the calculation.
-If needed, use the "Clear" button to reset the calculator.
+
+Locate the main class (e.g., Main.java) and run it.
+Using the Calculator
+Entering Numbers:
+
+Click on the digit buttons (0-9) to input numbers.
+Performing Calculations:
+
+Select an arithmetic operator (+, -, *, /) by clicking the corresponding button.
+After entering the first number and selecting an operator, enter the second number.
+Getting the Result:
+
+Click the equals button (=) to calculate and display the result in the text field.
+Clearing the Input:
+
+Use the "Clear" button to reset the calculator and start a new calculation.
 Screenshots
-![Снимок экрана 2024-10-24 152332](https://github.com/user-attachments/assets/1b02f241-c771-4cdc-8b0a-9058c11c617c)
-![Снимок экрана 2024-10-24 152939](https://github.com/user-attachments/assets/60a0ad79-6f17-45a4-804b-1ad14eb080c9)
+Main Interface
 
-Main interface of the CalculatorApp.
+The main interface of CalculatorApp, showcasing the layout of buttons and display.
 
+Performing Addition
 
-Example of division by zero error message.
+Example of adding two numbers.
 
-Error Handling
-Division by Zero: If the user attempts to divide by zero, the calculator will display "Error: Division by Zero" in the input field.
-General Input Handling: The application is designed to handle invalid inputs gracefully.
+Handling Division by Zero
+
+Error message displayed when attempting to divide by zero.
+![Снимок экрана 2024-10-24 152332](https://github.com/user-attachments/assets/9f2620d8-fea5-42a5-b62d-02f2a7ecf0f6)
+![Снимок экрана 2024-10-24 152939](https://github.com/user-attachments/assets/5b8b1de8-0c8c-4a3e-9b15-2f2346014c8c)
+
 Known Issues
-The calculator does not currently support decimal inputs; only integer arithmetic is implemented.
-The application may not handle simultaneous operator presses; ensure to press the equals button after selecting an operator.
-Contributing
-Contributions are welcome! If you find a bug or have suggestions for improvements, please open an issue or submit a pull request.
-
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
-
+Decimal Support: The calculator currently only supports integer arithmetic. Decimal inputs are not yet implemented.
+Operator Press Handling: Pressing multiple operators in quick succession may not yield expected results. Always press equals (=) after selecting an operator.
+Error Handling
+Division by Zero: The application gracefully handles division by zero by displaying the message "Error: Division by Zero" in the input field.
+Invalid Input: Users are encouraged to enter valid integers and operators to ensure proper functionality.
